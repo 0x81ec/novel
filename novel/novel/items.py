@@ -9,6 +9,7 @@ import scrapy
 
 
 class NovelItem(scrapy.Item):
+    
     name = scrapy.Field()
     chapter = scrapy.Field()
     content = scrapy.Field()
