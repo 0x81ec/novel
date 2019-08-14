@@ -14,7 +14,7 @@ if __name__ == "__main__":
             try:
                 for f in fs:
                     with open(os.path.join(p,f),mode="r",encoding="utf-8") as tm:
-                        book.writelines(os.path.join(p,f).split("\\")[-1].replace(".txt", ""))
+                        book.writelines(os.path.join(p,f).split("\\")[-1].replace(".txt", "")+"\n")
                         book.write(tm.read())
                     print(f+" ok")
             except:
